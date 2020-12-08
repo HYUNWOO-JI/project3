@@ -1,42 +1,39 @@
 @charset "utf-8";
 @font-face {
-    font-family: NtSans;
+    font-family: NtSansKR;
     font-weight: 300;
     font-style: normal;
-    src: url("../../../../../web/fonts/NotoSansKR-Light.eot");
-    src: url("../../../../../web/fonts/NotoSansKR-Light.eot#iefix") format("embedded-opentype"), url("../../../../../web/fonts/NotoSansKR-Light.woff2") format("woff2"), url("../../../../../web/fonts/NotoSansKR-Light.woff") format("woff"), url("../../../../../web/fonts/NotoSansKR-Light.otf") format("opentype"); }
+    src: url("../fonts/NotoSansKR-Light.eot");
+    src: url("../fonts/NotoSansKR-Light.eot#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Light.woff2") format("woff2"), url("../fonts/NotoSansKR-Light.woff") format("woff"), url("../fonts/NotoSansKR-Light.otf") format("opentype"); }
 @font-face {
-    font-family: NtSans;
+    font-family: NtSansKR;
     font-weight: 400;
     font-style: normal;
-    src: url("../../../../../web/fonts/NotoSansKR-Regular.eot");
-    src: url("../../../../../web/fonts/NotoSansKR-Regular.eot#iefix") format("embedded-opentype"), url("../../../../../web/fonts/NotoSansKR-Regular.woff2") format("woff2"), url("../../../../../web/fonts/NotoSansKR-Regular.woff") format("woff"), url("../../../../../web/fonts/NotoSansKR-Regular.otf") format("opentype"); }
+    src: url("../fonts/NotoSansKR-Regular.eot");
+    src: url("../fonts/NotoSansKR-Regular.eot#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Regular.woff2") format("woff2"), url("../fonts/NotoSansKR-Regular.woff") format("woff"), url("../fonts/NotoSansKR-Regular.otf") format("opentype"); }
 @font-face {
-    font-family: NtSans;
+    font-family: NtSansKR;
     font-weight: 500;
     font-style: normal;
-    src: url("../../../../../web/fonts/NotoSansKR-Medium.eot");
-    src: url("../../../../../web/fonts/NotoSansKR-Medium.eot#iefix") format("embedded-opentype"), url("../../../../../web/fonts/NotoSansKR-Medium.woff2") format("woff2"), url("../../../../../web/fonts/NotoSansKR-Medium.woff") format("woff"), url("../../../../../web/fonts/NotoSansKR-Medium.otf") format("opentype"); }
+    src: url("../fonts/NotoSansKR-Medium.eot");
+    src: url("../fonts/NotoSansKR-Medium.eot#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Medium.woff2") format("woff2"), url("../fonts/NotoSansKR-Medium.woff") format("woff"), url("../fonts/NotoSansKR-Medium.otf") format("opentype"); }
 @font-face {
-    font-family: NtSans;
+    font-family: NtSansKR;
     font-weight: 700;
     font-style: normal;
-    src: url("../../../../../../web/fonts/NotoSansKR-Bold.eot");
-    src: url("../../../../../web/fonts/NotoSansKR-Bold.eot#iefix") format("embedded-opentype"), url("../../../../../web/fonts/NotoSansKR-Bold.woff2") format("woff2"), url("../../../../../web/fonts/NotoSansKR-Bold.woff") format("woff"), url("../../../../../web/fonts/NotoSansKR-Bold.otf") format("opentype"); }
+    src: url("../../../web/fonts/NotoSansKR-Bold.eot");
+    src: url("../../../web/fonts/NotoSansKR-Bold.eot#iefix") format("embedded-opentype"), url("../../../web/fonts/NotoSansKR-Bold.woff2") format("woff2"), url("../../../web/fonts/NotoSansKR-Bold.woff") format("woff"), url("../../../web/fonts/NotoSansKR-Bold.otf") format("opentype"); }
 @font-face {
-    font-family: Montserrat;
-    font-weight: 300;
+    font-family: NanumGothic;
+    font-weight: 400;
     font-style: normal;
-    src: url("../fonts/montserrat-v14-latin-300.woff2") format("woff2"), url("../fonts/montserrat-v14-latin-300.woff") format("woff"), url("../fonts/montserrat-v14-latin-300.ttf") format("truetype"); }@font-face {
-    font-family: Montserrat;
-    font-weight: 500;
-    font-style: normal;
-    src: url("../fonts/montserrat-v14-latin-500.woff2") format("woff2"), url("../fonts/montserrat-v14-latin-500.woff") format("woff"), url("../fonts/montserrat-v14-latin-500.ttf") format("truetype"); }
+    src: url("../fonts/NanumGothic-Regular.ttf") format("truetype");}
 @font-face {
-    font-family: Montserrat;
+    font-family: NanumGothic;
     font-weight: 700;
     font-style: normal;
-    src: url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"), url("../fonts/montserrat-v14-latin-700.woff") format("woff"), url("../fonts/montserrat-v14-latin-700.ttf") format("truetype"); }
+    src: url("../fonts/NanumGothic-Bold.ttf") format("truetype");}
+
 
 body, h1, h2, h3, h4, h5, h6, ul, p, figure, button {margin: 0; padding: 0; }
   
