@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RALPH LAUREN </title>
+    <link rel="apple-touch-icon" href="images/common/logo4.ico">
+    <!--size:114-->
+    <link rel="shortcut icon" href="images/common/logo4.ico">
+    <!--size:72-->
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+</head>
+
+<body>
+    <!--반응형을 제작시
+        1) 가장 컨텐츠가 많고 복잡한 pc를 보고 마크업 한다
+        2) 일반적인 pc => max-width로 점점 작은 모바일의 순서로 하는 것이 보편적이다
+
+        디자인 제작시에도 pc먼저 -> 태블릿 -> 모바일(이미지 2배로 고정)
+    -->
+    <div id="skip">
+        <a href="#container">본문 바로가기</a>
+    </div>
+
+    <div id="wrap">
+        <div class="promotion swiper-container">
+            <div class="cont_inner txtwrap swiper-wrapper">
+                <div class="swiper-slide">
+                    <strong>HIT</strong>
+                    <p>랄프로렌 X 샤넬 컬렉션 출시</p>
+                </div>
+                <div class="swiper-slide">
+                    <strong>NEW</strong>
+                    <p>랄프로렌 X 랄프로렌 컬렉션 출시</p>
+                </div>
+                <div class="swiper-slide">
+                    <strong>NEW</strong>
+                    <p>랄프로렌 X 마르지엘라 니트 출시</p>
+                </div>
+                <div class="swiper-slide">
+                    <strong>NEW</strong>
+                    <p>랄프로렌 X 디올 컬렉션 출시</p>
+                </div>
+                <div class="swiper-slide">
+                    <strong>NEW</strong>
+                    <p>랄프로렌 X 마르지엘라 스웨터 출시</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ST : header -->
+        <header class="header" id="pcHeader">
+            <div class="cont_inner">
+                <h1 class="logo">
+                    <a href="">
+                        <div class="blind-b">RALPH LAUREN</div>
+                    </a>
+                </h1>
+
+                <nav id="pcGnb">
+                    <ul>
+                        <li>
+                            <a href="">폴로셔츠</a>
+                        <li>
+                            <a href="">남성</a>
+                        </li>
+                        <li>
+                            <a href="">여성</a>
+                        </li>
+                        <li>
+                            <a href="">아동</a>
+                        </li>
+                        <li>
+                            <a href="">WORLD OF <br> RALPH LAUREN</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="util p_a">
+                    <ul class="util_list">
+                        <li class="item item_like"><a href=""><span class="blind-b">찜하기</span></a></li>
+                        <li class="item item_cart"><a href=""><span class="blind-b">장바구니</span></a></li>
+                        <li class="item item_my"><a href=""><span class="blind-b">마이페이지</span></a></li>
+                        <li class="item item_cs"><a href=""><span class="blind-b">고객센터</span></a></li>
+                    </ul>
+                    <div class="search">
+                        <button class="btn_open" type="button">
+                            <span class="blind-b">검색창 열기</span>
+                        </button>
+                        <div class="search_wrap">
+                            <form action="index.html" id="search">
+                                <div class="top">
+                                    <label for="searchTxt" class="blind-b">검색어</label>
+                                    <input type="text" id="searchTxt" name="searchTxt" placeholder="검색어를 입력하세요.">
+                                    <button><img src="images/layout/top_search_wh.png" alt="검색"></button>
+                                </div>
+                                <div class="btm">
+                                    <p class="blind-b">주요 검색어</p>
+                                    <ul>
+                                        <li><a href="">#캐시미어</a></li>
+                                        <li><a href="">#폴로셔츠</a></li>
+                                        <li><a href="">#클래식핏</a></li>
+                                        <li><a href="">#슬림핏</a></li>
+                                        <li><a href="">#PURPLE LABEL</a></li>
+                                    </ul>
+                                </div>
+                            </form>
+                            <button class="btn_close" type="button"><img src="images/layout/main_viewClose.png"
+                                    alt="검색창 닫기"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn_allmenu"><span class="blind-b">전체메뉴</span></button>
+            </div>
+        </header>
+        <!-- EN : header -->
+
+        <!-- ST : container -->
+        <div class="container" id="container">
+            <section class="dashboard">
+                <div class="story_cont">
+                    <h2>The Polo Shirt Story</h2>
+                    <p>포근한 느낌을 더해 센스 있는 패션을 완성하는 폴로 스웨터를 소개합니다.</p>
+                    <div><img src="images/main/main_section1.jpg"></div>
+                    <a href="" class="btn_more">더 알아보기</a>
+                </div>
+
+                <div class="goods_cont">
+                    <ul class="goods_list">
+                        <li>
+                            <a href="">
+                                <div class="goods_img">
+                                    <img src="images/main/main_section2.jpg" alt="">
+                                </div>
+                                <p class="goods_name">케이블 울 캐시미어 스웨터</p>
+                                <p class="goods_price">199,000 원</p>
+                                <button type="button"><span class="blind-b">찜하기</span></button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="goods_img">
+                                    <img src="images/main/main_section3.jpg" alt="">
+                                </div>
+                                <p class="goods_name">케이블 울 캐시미어 스웨터</p>
+                                <p class="goods_price">199,000 원</p>
+                                <button type="button"><span class="blind-b">찜하기</span></button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="goods_img">
+                                    <img src="images/main/main_section4.jpg" alt="">
+                                </div>
+                                <p class="goods_name">케이블 울 캐시미어 스웨터</p>
+                                <p class="goods_price">199,000 원</p>
+                                <button type="button"><span class="blind-b">찜하기</span></button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="goods_img">
+                                    <img src="images/main/main_section5.jpg" alt="">
+                                </div>
+                                <p class="goods_name">케이블 울 캐시미어 스웨터</p>
+                                <p class="goods_price">199,000 원</p>
+                                <button type="button"><span class="blind-b">찜하기</span></button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="goods_choose">
+                <h2>CHOOSE YOUR ICON</h2>
+                <div>
+                    <ul class="goods_choose_list">
+                        <li>
+                            <a href="">
+                                <div class="goods_img">
+                                    <img src="images/main/chooseicon_1.jpg" alt="">
+                                </div>
+                                <p class="goods_name">케이블 울 캐시미어 스웨터</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="goods_img">
+                                    <img src="images/main/chooseicon_2.jpg" alt="">
+                                </div>
+                                <p class="goods_name">케이블 울 캐시미어 스웨터</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="goods_img">
+                                    <img src="images/main/chooseicon_3.jpg" alt="">
+                                </div>
+                                <p class="goods_name">케이블 울 캐시미어 스웨터</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="goods_img">
+                                    <img src="images/main/chooseicon_4.jpg" alt="">
+                                </div>
+                                <p class="goods_name">케이블 울 캐시미어 스웨터</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="goods_video">
+                <h3>케이블 울 캐시미어 스웨터</h3>
+                <div class="second_goods">
+                    <ul class="second_goods_list">
+                        <li>
+                            <a href="">
+                                <div class="goods_mainimg">
+                                    <img src="images/main/second_section1.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="second_goods_video">
+                    <video src=""></video>
+                </div>
+
+                <div class="second_btmgoods">
+                    <ul class="second_btmgoods_list">
+                        <li>
+                            <a href="">
+                                <div class="goods_subimg">
+                                    <img src="images/main/second_section2.jpg" alt="">
+                                </div>
+                                <p class="goods_name">케이블 울 캐시미어 스웨터</p>
+                                <p class="goods_price">199,000 원</p>
+                                <button type="button"><span class="blind-b">찜하기</span></button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="goods_subimg">
+                                    <img src="images/main/second_section3.jpg" alt="">
+                                </div>
+                                <p class="goods_name">케이블 울 캐시미어 스웨터</p>
+                                <p class="goods_price">199,000 원</p>
+                                <button type="button"><span class="blind-b">찜하기</span></button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="fullboard">
+
+            </section>
+
+            <section class="fullboard2">
+
+            </section>
+
+            <section class="community">
+
+            </section>
+
+            <section class="service">
+                
+            </section>
+        </div>
+        <!-- EN : container -->
+
+        <!-- ST : footer -->
+        <footer id="footer">
+            <div class="cont_inner">
+                <div class="company_info">
+                    <div class="company_inner">
+                        <span class="item">랄프로렌 대표 지현우</span>  
+                        <span class="item">개인정보책임 지현우 </span>
+                        <span class="item">사업자등록번호 220-88-74818</span>
+                        <span class="item">통신판매업 신고번호: 제2016-서울강남-00478호 </span>
+                        <span class="item">통신판매업자 신원정보 확인</span>
+                        <address class="item">주소: 서울특별시 강남구 테헤란로 152 강남파이낸스센터 32F</address>
+                        <span class="item">고객상담팀: 080 -987-0182(상담시간 월~금: AM 9:00 – PM 05:30, 주말 /공휴일 휴무) </span>
+                        <span class="item">ralphlauren@polo.co.kr</span>
+                    </div>
+                    <p class="copy">Copyright 2008-2020-Ralph Lauren</p>
+                </div>
+                <div class="company_insurance">
+                    <p class="tit">소비자피해 보증보험</p>
+                    <p class="txt">고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 구매
+                    안전서비스 소비자피해보증보험 서비스를 이용하실 수 있습니다.
+                    보증대상: 미배송, 반품/환불거부, 쇼핑몰 부도
+                    보증보험 가입사실 확인하기</p>
+                </div>
+            </div>
+        </footer>
+        <!-- EN : footer -->
+    </div>
+
+    <!-- ST: allmenu_wrap -->
+    <div class="allmenu_wrap" style="display:none;">
+        <div class="allmenu_head">
+            <ul class="util_list">
+                <li class="item item_my"><a href=""><span class="blind-b">마이페이지</span></a></li>
+                <li class="item item_cart"><a href=""><span class="blind-b">장바구니</span></a></li>
+            </ul>
+        </div>
+
+        <nav class="allmenu_nav">
+            <ul class="allmenu_list">
+                <li><a href="">폴로셔츠</a></li>
+                <li><a href="">남성</a></li>
+                <li><a href="">여성</a></li>
+                <li><a href="">아동</a></li>
+                <li><a href="">WORLD OF <br>RALPH LAUREN</a></li>
+            </ul>
+        </nav>
+
+        <button type="button"><span class="blind-b">전체메뉴 닫기</span></button>
+    </div>
+    <!-- EN: allmenu_wrap -->
+</body>
+
+</html>
