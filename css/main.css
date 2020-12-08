@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+.swiper-slide {
+    position: relative;
+}
+
+.slide-cont {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: #000;
+}

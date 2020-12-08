@@ -30,6 +30,12 @@
     <div id="wrap">
         <div class="promotion swiper-container">
             <div class="cont_inner txtwrap swiper-wrapper">
+                <div class="lang">
+                    <img src="images/common/locale-kr.svg" alt="">
+                    <p>KR</p>
+                    <span class="break-line">|</span>
+                    <a class="text" href="https://www.ralphlauren.co.kr/en/" target="_blank">한국어</a>
+                </div>
                 <div class="swiper-slide">
                     <strong>HIT</strong>
                     <p>랄프로렌 X 샤넬 컬렉션 출시</p>
@@ -51,6 +57,17 @@
                     <p>랄프로렌 X 마르지엘라 스웨터 출시</p>
                 </div>
             </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- 자동실행, 일시정지 추가 -->
+            <button class="autoplay play_stop" title="재생">
+                <span class="blind-b">재생</span>
+            </button>
+            <button class="autostop play_stop" title="일시정지">
+                <span class="blind-b">일시정지</span>
+            </button>
         </div>
 
         <!-- ST : header -->
@@ -232,7 +249,7 @@
                 </div>
 
                 <div class="second_goods_video">
-                    <video src=""></video>
+                    <iframe width="957" height="530" src="https://www.youtube.com/embed/PUfcn5VOkpQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
                 <div class="second_btmgoods">
@@ -285,21 +302,21 @@
                             <div>
                                 <img src="images/main/third_section3.jpg" alt="">
                             </div>
-                        </a> 
+                        </a>
                     </li>
                     <li>
                         <a href="">
                             <div>
                                 <img src="images/main/third_section5.jpg" alt="">
                             </div>
-                        </a> 
+                        </a>
                     </li>
                     <li>
                         <a href="">
                             <div>
                                 <img src="images/main/third_section6.jpg" alt="">
                             </div>
-                        </a> 
+                        </a>
                     </li>
                 </ul>
 
@@ -421,7 +438,18 @@
                     </ul>
                 </div>
             </section>
+            <div class="floating-bar">
 
+                <a href="https://www.ralphlauren.co.kr/ko/polo-shirt" class="anchor flex flex-align-center"
+                    target="_blank">
+                    <img src="images/main/POLO_RL_Navy_2019.png" alt="">
+                        <use xlink:href="#store-logo-simple">폴로셔츠 컬렉션 보러가기
+                        </use>
+                    <p class="content">폴로셔츠 컬렉션 보러가기
+                    </p>
+                </a>
+
+            </div>
             <section class="service">
                 <div>
                     <ul>
@@ -438,9 +466,9 @@
                             <a href="">
                                 <div>
                                     <strong>교환/반품 서비스</strong>
-                                    <p>사이즈를 잘못 선택하셨나요? <br> 
-                                    교환/반품 서비스에 대해 <br> 
-                                    더 알아보세요.</p>
+                                    <p>사이즈를 잘못 선택하셨나요? <br>
+                                        교환/반품 서비스에 대해 <br>
+                                        더 알아보세요.</p>
                                     <img src="images/main/service_stroke.png" alt="">
                                 </div>
                             </a>
@@ -449,7 +477,7 @@
                             <a href="">
                                 <div>
                                     <strong>회원 전용 혜택</strong>
-                                    <p>신규 가입 축하 쿠폰, 드로우 응모 등  <br> 지금 회원 가입 하시고 <br> 더욱 특별한 혜택을 누려보세요.</p>
+                                    <p>신규 가입 축하 쿠폰, 드로우 응모 등 <br> 지금 회원 가입 하시고 <br> 더욱 특별한 혜택을 누려보세요.</p>
                                     <img src="images/main/POLO_RL_Navy_2019.png" alt="">
                                 </div>
                             </a>
@@ -466,61 +494,68 @@
                         </li>
                     </ul>
                 </div>
-            <div>
-                <div class="col display-small-up">
-                    <div class="column-item">
-                        <p class="column-item-title">FOLLOW US</p>
-                        <div class="socialmedia-links flex">
-                            <a class="link-social flex flex-align-center flex-justify-center" href="https://www.facebook.com/RalphLaurenKorea" target="_blank" title="Facebook" rel="noopener noreferrer">
-                                <img src="" alt="">
-                            </a>
-                            <a class="link-social flex flex-align-center flex-justify-center" href="https://www.instagram.com/ralphlauren" target="_blank" title="Instagram" rel="noopener noreferrer">
-                               <img src="" alt="">
-                            </a>
+                <div>
+                    <div class="col display-small-up">
+                        <div class="column-item">
+                            <p class="column-item-title">FOLLOW US</p>
+                            <div class="socialmedia-links flex">
+                                <a class="link-social flex flex-align-center flex-justify-center"
+                                    href="https://www.facebook.com/RalphLaurenKorea" target="_blank" title="Facebook"
+                                    rel="noopener noreferrer">
+                                    <img src="" alt="">
+                                </a>
+                                <a class="link-social flex flex-align-center flex-justify-center"
+                                    href="https://www.instagram.com/ralphlauren" target="_blank" title="Instagram"
+                                    rel="noopener noreferrer">
+                                    <img src="" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col display-small-up">
-                    <div class="column-item">
-                        <p class="column-item-title">SUPPORT</p>
-                        <ul class="column-links list-reset">
-                            <li><a class="text-link" href="/cscenter">고객지원센터</a></li>
-                            <li><a class="text-link" href="/account/inquiry">1:1 문의</a></li>
-                            <li><a class="text-link" href="/account/orders">주문/배송 조회</a></li>
-                        </ul>
+                    <div class="col display-small-up">
+                        <div class="column-item">
+                            <p class="column-item-title">SUPPORT</p>
+                            <ul class="column-links list-reset">
+                                <li><a class="text-link" href="/cscenter">고객지원센터</a></li>
+                                <li><a class="text-link" href="/account/inquiry">1:1 문의</a></li>
+                                <li><a class="text-link" href="/account/orders">주문/배송 조회</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col display-small-up">
-                    <div class="column-item">
-                        <p class="column-item-title">INFORMATION</p>
-                        <ul class="column-links list-reset">
-                            <li><a class="text-link" href="https://jobs.converse.com/about" target="_blank">랄프로렌에 대하여</a></li>
-                            <li><a class="text-link" href="#">회원가입</a></li>
-                            <li><a class="text-link" href="#">매장안내</a></li>
-                            <li><a class="text-link" href="#">공지사항</a></li>
-                        </ul>
+                    <div class="col display-small-up">
+                        <div class="column-item">
+                            <p class="column-item-title">INFORMATION</p>
+                            <ul class="column-links list-reset">
+                                <li><a class="text-link" href="https://jobs.converse.com/about" target="_blank">랄프로렌에
+                                        대하여</a></li>
+                                <li><a class="text-link" href="#">회원가입</a></li>
+                                <li><a class="text-link" href="#">매장안내</a></li>
+                                <li><a class="text-link" href="#">공지사항</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col display-small-up">
-                    <div class="column-item">
-                        <p class="column-item-title">POLICY</p>
-                        <ul class="column-links list-reset">
-                            <li><a class="text-link" href="#">이용약관</a></li>
-                            <li><a class="text-link text-semibold" href="/#">개인정보처리방침</a></li>
-                        </ul>
+                    <div class="col display-small-up">
+                        <div class="column-item">
+                            <p class="column-item-title">POLICY</p>
+                            <ul class="column-links list-reset">
+                                <li><a class="text-link" href="#">이용약관</a></li>
+                                <li><a class="text-link text-semibold" href="/#">개인정보처리방침</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="column-item column-family-sites">
-                        <p class="column-item-title">FAMILY SITES</p>
-                        <ul class="column-links list-reset">
-                            <li><a class="text-link" target="_blank" href="https://www.chanel.com/ko_KR/">CHANEL</a></li>
-                            <li><a class="text-link" target="_blank" href="https://wwwhttps://www.maisonmargiela.com/">MARGIELA</a></li>
-                        </ul>
+                    <div class="col">
+                        <div class="column-item column-family-sites">
+                            <p class="column-item-title">FAMILY SITES</p>
+                            <ul class="column-links list-reset">
+                                <li><a class="text-link" target="_blank" href="https://www.chanel.com/ko_KR/">CHANEL</a>
+                                </li>
+                                <li><a class="text-link" target="_blank"
+                                        href="https://wwwhttps://www.maisonmargiela.com/">MARGIELA</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
 
-            </div>
+                </div>
             </section>
         </div>
         <!-- EN : container -->
@@ -530,7 +565,7 @@
             <div class="cont_inner">
                 <div class="company_info">
                     <div class="company_inner">
-                        <span class="item">랄프로렌 대표 지현우</span>  
+                        <span class="item">랄프로렌 대표 지현우</span>
                         <span class="item">개인정보책임 지현우 </span>
                         <span class="item">사업자등록번호 220-88-74818</span>
                         <span class="item">통신판매업 신고번호: 제2016-서울강남-00478호 </span>
@@ -544,9 +579,9 @@
                 <div class="company_insurance">
                     <p class="tit">소비자피해 보증보험</p>
                     <p class="txt">고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 구매
-                    안전서비스 소비자피해보증보험 서비스를 이용하실 수 있습니다.
-                    보증대상: 미배송, 반품/환불거부, 쇼핑몰 부도
-                    보증보험 가입사실 확인하기</p>
+                        안전서비스 소비자피해보증보험 서비스를 이용하실 수 있습니다.
+                        보증대상: 미배송, 반품/환불거부, 쇼핑몰 부도
+                        보증보험 가입사실 확인하기</p>
                 </div>
             </div>
         </footer>
