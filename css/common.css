@@ -64,18 +64,12 @@ header, nav, section, article, figure, footer {display: block; }
 .clearfix::after {content: "";display: block;clear: both; }
 
 .blind-b {width: 1px;height: 1px;overflow: hidden;border: none;position: absolute; clip: rect(1px, 1px,1px, 1px); clip-path: inset(50%); }
-<<<<<<< HEAD
 body {font-family: NtSansKR, NanumGothic sans-serif;}
-=======
->>>>>>> 2cc46854ea5340aa39f10492345dcb64fd584c20
 .white {color: #ffffff;}
 /***********************************************************************
 Common
 ***********************************************************************/
-<<<<<<< HEAD
 #wrap{padding-top: 60px;}
-=======
->>>>>>> 2cc46854ea5340aa39f10492345dcb64fd584c20
 /* title */
 .tit2 {font-size:26px;}
 
@@ -87,15 +81,11 @@ Common
 .btn_wish {position:absolute;top:10px;left:10px;width:27px;height:24px;background:url(../images/common/top_wish.png) no-repeat 0 0 / 100%;}
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 2cc46854ea5340aa39f10492345dcb64fd584c20
 /***********************************************************************
 Layout
 ***********************************************************************/
 /* header */
-<<<<<<< HEAD
 .header {height:60px; position: fixed;top: 0;left: 0;width: 100%;height: 60px;z-index: 900; background: #fff;}
 .header .logo {float:left;margin-top:23px;}
 .header .logo > a {display:block;width:198px;height:14px;background:url(../images/main/logo.png) no-repeat 0 0 / 100%;}
@@ -112,14 +102,6 @@ Layout
 .header .recomand_goods_list > li {float:left;width:25%;max-width:180px;padding:0 5px;box-sizing:border-box;}
 .header .recomand_goods_list .img {height:210px;}
 .header .recomand_goods_list .img img {height:100%;}
-=======
-.header {height:60px;}
-.header .logo {float:left;margin-top:23px;}
-.header .logo > a {display:block;width:198px;height:14px;background:url(../images/main/logo.png) no-repeat 0 0 / 100%;}
-.header .nav {float:left;margin-top:18px;}
-.header .nav_list > li {float:left;margin-left:15px;}
-.header .nav_list > li > a {font-size:18px;}
->>>>>>> 2cc46854ea5340aa39f10492345dcb64fd584c20
 .header .util {float:right;padding-right:300px;}
 .header .util .search {position:absolute;top:0;right:0;width:270px;height:60px;background:#000;}
 .header .util .search .btn_open {position:relative;width:100%;height:100%;background:#000;}
