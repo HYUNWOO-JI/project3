@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.goods_list .goods_img').hover (
+    $('.overeffect').hover (
         function () {
             var _img = $(this).children().attr('src');
             _img = _img.replace('.png', '_on.png');
