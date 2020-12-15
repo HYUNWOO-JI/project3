@@ -62,31 +62,33 @@
 
 .sns_cont h3 {text-align: center; font-size: 30px; margin: 0 auto; margin: 30px;}
 .sns_list{display: flex; flex-wrap: wrap; justify-content: space-between;}
-.sns_list li {flex-basis: 23%;}
-
+.sns_list li {flex-basis: 23%;padding-bottom: 2%;}
+.sns_list li a{display: block;position: relative;}
+.sns_list li a::before{content: "";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,.5) url("../images/common/zoom.png") no-repeat center;opacity: 0;transition: opacity 0.5s;}
+.sns_list li a:hover::before, .sns_list li a:focus::before{opacity: 1;}
 
 .service_list {display: flex; flex-wrap: wrap;}
-.service_list li {flex-basis: 25%; text-align: center; margin: 20px 0; }
+.service_list li {flex-basis: 25%; text-align: center; margin: 40px 0; }
 .service_list strong{display: block; font-size: 16px;}
 .service_list p {color: #777;}
 .ship img, .change img, .icon_logo img, .icon_sns img {height: 70px;}
 
-.support {display: flex; flex-wrap: wrap;}
+.support {display: flex; flex-wrap: wrap;margin-bottom: 70px;}
 .support .col {flex-basis: 20%; text-align: center; border: 1px solid #000; box-sizing: border-box; color: #777;}
 .column-item p {color: #000;}
 .column-item-title {font-size: 18px; padding-bottom: 20px;}
 
 /* floating bar */
-.floating_bar {position: fixed; right: 0; bottom: 100px; width: 240px; height: 80px; overflow: hidden;}
+.floating_bar {position: fixed; right: 0; bottom: 100px; width: 240px; height: 80px; overflow: hidden;transition: bottom 0.5s;}
+.floating_bar.btm {bottom: 260px;}
 .floating_bar a {position:relative;display: block; height:100%; transform: translateX(186px); transition: transform 0.32s cubic-bezier(0.4, 0.9, 0.3, 1), -webkit-transform 0.32s cubic-bezier(0.4, 0.9, 0.3, 1); padding-left:55px;border-radius: 40px 0 0 40px; color: #fff;background:#000 url(../images/common/logo.png) no-repeat 20px center / 10%;line-height:80px;}
 .floating_bar a:hover, .floating_bar a:focus {transform: translateX(0);}
-/* footer */
-#footer {background-color: #000; color: #fff;}
 
-#footer .cont_inner {display: flex; flex-wrap: wrap;}
 
-#footer .cont_inner > div {flex-basis: 50%;}
-
+@media screen and (max-width: 1024px){
+    .floating_bar{bottom: 50px;}
+    .floating_bar.btm {bottom: 215px;}
+}
 @media screen and (max-width: 767px){
     
 }

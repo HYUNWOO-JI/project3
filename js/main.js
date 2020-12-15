@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.goods_list .goods_img').hover (
+    $('.overeffect').hover (
         function () {
             var _img = $(this).children().attr('src');
             _img = _img.replace('.png', '_on.png');
@@ -13,4 +13,11 @@ $(document).ready(function() {
             $(this).children().attr({src:_img});
         }
     );
+
+    $(window).on('scroll', function () {
+        var scrollY = $(this).scrollTop();
+        console.log(scrollY);
+        if (scrollY >= $(document).height() - $(this).height() - $('#footer').outerHeight()) $('.floating_bar').addClass('btm');
+        else $('.floating_bar').removeClass('btm');
+    });
 });

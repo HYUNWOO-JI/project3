@@ -79,6 +79,7 @@ Common
 .goods_list li a .txt{padding-top: 10px;}
 /* button */
 .btn_wish {position:absolute;top:10px;left:10px;width:27px;height:24px;background:url(../images/common/top_wish.png) no-repeat 0 0 / 100%;}
+.btn_wish:hover{transform: scale(1.2); transition: all .2s;}
 
 
 
@@ -101,17 +102,17 @@ Layout
 .header .recomand_goods > .tit {font-size:25px;font-weight:700;}
 .header .recomand_goods_list > li {float:left;width:25%;max-width:180px;padding:0 5px;box-sizing:border-box;}
 .header .recomand_goods_list .img {height:210px;}
-.header .recomand_goods_list .img img {height:100%;}
-.header .util {float:right;padding-right:300px;}
+/* .header .recomand_goods_list .img img {height:100%;} */
+.header .util {float:right;padding-right:290px;}
 .header .util .search {position:absolute;top:0;right:0;width:270px;height:60px;background:#000;}
 .header .util .search .btn_open {position:relative;width:100%;height:100%;background:#000;}
 .header .util .search .btn_open:after {content:'';position:absolute;top:50%;right:21px;width:26px;height:26px;background:url(../images/common/top_search_wh.png) no-repeat 0 0 / 100%;transform:translateY(-50%);}
-.header .util_list {margin-top:12px;}
-.header .util_list .item {display:inline-block;width:26px;height:26px;margin-left:20px;background:no-repeat 0 0 / 100%;}
+.header .util_list {margin-top:17px;font-size: 0;}
+.header .util_list .item {display:inline-block;width:26px;height:26px;margin-left:20px;background:no-repeat center / auto 100%;}
 .header .util_list .item:first-of-type {margin-left:0;}
 .header .util_list .item > a {display:block;height:100%;}
-.header .util_list .item_like {width:27px;height:24px;background-image:url(../images/common/top_wish.png);}
-.header .util_list .item_cart {width:25px;height:30px;background-image:url(../images/common/top_cart_pc.png);}
+.header .util_list .item_like {background-image:url(../images/common/top_wish.png);background-size: 100% auto;background-position: center bottom;}
+.header .util_list .item_cart {background-image:url(../images/common/top_cart_pc.png);}
 .header .util_list .item_my {background-image:url(../images/common/top_mypage.png);}
 .header .util_list .item_cs {background-image:url(../images/common/top_search.png);}
 .header .btn_allmenu {display:none;}
@@ -121,3 +122,40 @@ Layout
 
 /* container */
 .cont_inner {position:relative;width:100%;max-width:1400px;margin:0 auto;}
+
+
+/* footer */
+#footer {background-color: #000; color: #fff;padding: 44px 0;}
+#footer .cont_inner {display: flex;}
+#footer .cont_inner > div {flex-basis: 50%;}
+
+@media screen and (max-width: 1400px) {
+    .logo{padding-left: 10px;}
+}
+@media screen and (max-width: 1230px) {
+    /* header */
+    .header .util {padding-right:70px;}
+    .header .util .search {width:60px;}
+
+    /* footer */
+    #footer .cont_inner {display: flex;justify-content: space-around;}
+    #footer .cont_inner > div {flex-basis: 45%;}
+}
+@media screen and (max-width: 1000px) {
+    .dashboard {display: flex; width: 100%;}
+    /* 네비게이션 텍스트가 길어서 우측 util과 한줄에 위치 하기는 어렵습니다. 어떻게 제어 해야 하나요?? */
+}
+@media screen and (max-width: 767px) {
+    .container {width: 100%;}
+    .header {margin: 0 auto;}
+    .header .btn_allmenu {position: absolute;}
+    .nav {display: none;}
+    .util_list{display: none;}
+
+    .dashboard {display: flex; width: 100%; justify-content: center; }
+    .goods_list {display: flex; width: 100%; justify-content: center;}
+    .header .btn_allmenu {position: absolute;}
+    .second_goods_visual img {width: 100%;}
+    .sns_list {display: flex; flex-basis: 50%;}
+    #footer {display: flex; width: 100%; justify-content: center; }
+}
