@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "utf-8";
 /* 광고 스와이퍼 슬라이드
 .swiper-slide {
@@ -93,3 +94,98 @@
     
 }
 
+=======
+@charset "utf-8";
+/* 광고 스와이퍼 슬라이드
+.swiper-slide {
+    position: relative;
+}
+
+.slide-cont {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: #000;
+}
+*/
+
+
+
+.goods_list {display:flex;flex-wrap:wrap;}
+.goods_list > li {flex-basis:50%;}
+.goods_list > li > a {position:relative;display:block;height:100%;}
+
+.dashboard {display:flex;flex-wrap:wrap;width:100%;}
+.dashboard .story_cont {position:relative;flex-basis:50%;padding:15px;background:thistle;box-sizing:border-box;}
+.dashboard .story_cont .tit2 {padding-bottom: 10px;}
+.dashboard .story_cont .txt {font-size:16px;font-weight:300;}
+.dashboard .story_cont .main_visual {position: relative; padding-top:67px;text-align:center; margin-top: 15px;}
+.dashboard .story_cont img {width:69%;}
+.dashboard .story_cont .btn_more {position:absolute;top:0;left:0;width:280px;height:54px;border:1px solid #000;background:#fff;text-align:center;line-height:52px;}
+.dashboard .story_cont .btn_more:hover{background: rgba(0,0,0,.1);}
+.dashboard .goods_cont {flex-basis:50%;}
+.dashboard .goods_list > li:nth-of-type(1),
+.dashboard .goods_list > li:nth-of-type(2) {background-color:#efefef;}
+
+.goods_choose {margin-top:32px;}
+.goods_choose .tit2 {margin-bottom:15px;text-align:center;}
+.goods_choose_list {display:flex;justify-content:space-around;}
+.goods_choose_list > li {text-align:center;}
+
+.second_goods_wrap {display:flex; margin-top: 20px;}
+.second_goods_wrap > div {flex-basis:50%;}
+.second_goods_visual {position:relative;display:flex;background-color:moccasin;align-items:center;justify-content:center;}
+.second_goods_visual .tit2 {position:absolute;top:20px;left:20px;}
+.second_btmgoods_list > li {float:left;width:50%;}
+
+.fullboard_wrap {display:flex;}
+.fullboard_visual {position: relative;}
+.fullboard_visual h2 {position: absolute; top: 15px; right: 18px; font-size: 14px;}
+.fullboard_visual > div {flex-basis:50%;}
+.fullboard_visual {position:relative;display:flex; align-items:center;justify-content:center;}
+
+.fullboard_group {position: relative;}
+
+.fullboard_center {width: 70%; /* float: left;*/}
+.fullboard_side {position: absolute; top: 0; right: 0; width: 42.7%; z-index: -1;}
+
+
+.third_btmgoods .goods_list {display:flex;flex-wrap:wrap;margin-top:-10px; width: 50%; justify-content: space-around;}
+.third_btmgoods .goods_list li {flex-basis:45%;margin-top:10px;}
+
+.stroy_wrap, .storysub_wrap {display: flex;}
+.storysub_wrap .story_cont:nth-child(1) {flex-basis: 70%;}
+.storysub_wrap .story_cont:nth-child(2) {flex-basis: 30%;}
+
+.sns_cont h3 {text-align: center; font-size: 30px; margin: 0 auto; margin: 30px;}
+.sns_list{display: flex; flex-wrap: wrap; justify-content: space-between;}
+.sns_list li {flex-basis: 23%;}
+
+
+.service_list {display: flex; flex-wrap: wrap;}
+.service_list li {flex-basis: 25%; text-align: center; margin: 20px 0; }
+.service_list strong{display: block; font-size: 16px;}
+.service_list p {color: #777;}
+.ship img, .change img, .icon_logo img, .icon_sns img {height: 70px;}
+
+.support {display: flex; flex-wrap: wrap;}
+.support .col {flex-basis: 20%; text-align: center; border: 1px solid #000; box-sizing: border-box; color: #777;}
+.column-item p {color: #000;}
+.column-item-title {font-size: 18px; padding-bottom: 20px;}
+
+/* floating bar */
+.floating_bar {position: fixed; right: 0; bottom: 100px; width: 240px; height: 80px; overflow: hidden;}
+.floating_bar a {position:relative;display: block; height:100%; transform: translateX(186px); transition: transform 0.32s cubic-bezier(0.4, 0.9, 0.3, 1), -webkit-transform 0.32s cubic-bezier(0.4, 0.9, 0.3, 1); padding-left:55px;border-radius: 40px 0 0 40px; color: #fff;background:#000 url(../images/common/logo.png) no-repeat 20px center / 10%;line-height:80px;}
+.floating_bar a:hover, .floating_bar a:focus {transform: translateX(0);}
+/* footer */
+#footer {background-color: #000; color: #fff;}
+
+#footer .cont_inner {display: flex; flex-wrap: wrap;}
+
+#footer .cont_inner > div {flex-basis: 50%;}
+
+@media screen and (max-width: 767px){
+    
+}
+
+>>>>>>> 7b24cdce72c9a88ea753312d4f1780526b45b70c
