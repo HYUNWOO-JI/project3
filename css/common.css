@@ -69,10 +69,23 @@ body {font-family: NtSansKR, NanumGothic sans-serif;}
 /***********************************************************************
 Common
 ***********************************************************************/
-#wrap{padding-top: 60px;}
+#wrap.on{padding-top: 60px;}
+.promotion {background: #d8d8d8;}
+.promotion, .promotion .swiper-slide {height: 70px;}
+.promotion .swiper-slide {text-align: center; display: flex; align-items: center; justify-content: center;}
+.promotion .swiper-button-prev, .promotion .swiper-button-next {font-size: 24px; color: #000; top: 27%;}
+.promotion .swiper-button-prev {left: 30%; top: 50%;}
+.promotion .swiper-button-next {right: 30%; top: 50%;}
+.promotion .swiper-button-prev:after, .promotion .swiper-button-next:after {display: none;}
+.promotion .controller {right: 0; top: 10px; z-index: 10;}
+.fas.fa-play, .fas.fa-pause {font-size: 20px; margin-top: 100%;}
+.lang {top: 40%; left: 2%; width: 100px; }
+.lang * {display: inline-block;}
+.lang img {width: 30px;}
 /* title */
 .tit2 {font-size:26px;}
 
+.util .serach .search_wrap {position: absolute; top: 100px; left: 0; width: 100%; padding: 100px 0;background: orange; color: #fff;} 
 /*  */
 .goods_list li {padding: 10px; box-sizing: border-box;}
 .goods_list li a {display: block;}
@@ -87,7 +100,8 @@ Common
 Layout
 ***********************************************************************/
 /* header */
-.header {height:60px; position: fixed;top: 0;left: 0;width: 100%;height: 60px;z-index: 900; background: #fff;}
+.header {height:60px; top: 0;left: 0;width: 100%;height: 60px;z-index: 900; background: #fff; transition: all 0.5s;}
+.header.fix {position: fixed;}
 .header .logo {float:left;margin-top:23px;}
 .header .logo > a {display:block;width:198px;height:14px;background:url(../images/main/logo.png) no-repeat 0 0 / 100%;}
 .header .nav {float:left;margin-top:18px; margin-left: 50px;}
@@ -146,16 +160,53 @@ Layout
     /* 네비게이션 텍스트가 길어서 우측 util과 한줄에 위치 하기는 어렵습니다. 어떻게 제어 해야 하나요?? */
 }
 @media screen and (max-width: 767px) {
-    .container {width: 100%;}
-    .header {margin: 0 auto;}
-    .header .btn_allmenu {position: absolute;}
-    .nav {display: none;}
-    .util_list{display: none;}
+    .header {height: 50px;}
+    .header .logo {float:none;margin-top:23px; text-align: center;}
+    .header .logo > a {margin: 0 auto; display:block;width:130px;height:9px;background:url(../images/main/logo.png) no-repeat 0 0 / cover;}
+    .header .nav {float:none;margin-top:0; margin-left: 0; display: none;}
+    .header .nav_list > li {float:left;margin-left:15px;}
+    .header .nav_list > li > a {font-size:18px;}
+    .header .sub_nav_box {position:fixed; visibility: hidden; left:-50%;top:60px;width:50%; height:100%; padding:23px 0 0 35px;background:#fff;z-index:9;box-sizing: border-box;}
+    .header .sub_nav_box .nav_closebtn {position: fixed; top: 80px; left: 50%; transform: translateX(650px); font-weight: 700; color: #fff; font-size: 24px;}
+    .header .sub_nav_list {margin-bottom:100px;}
+    .header .sub_nav_list > li a {font-size:48px;font-weight:700;}
+    .header .sub_nav_list > li:not(:first-of-type) {margin-top:5px;}
+    .header .recomand_goods > .tit {font-size:25px;font-weight:700;}
+    .header .recomand_goods_list > li {float:left;width:25%;max-width:180px;padding:0 5px;box-sizing:border-box;}
+    .header .recomand_goods_list .img {height:210px;}
+    .controller {display: none;} 
+    /* .header .recomand_goods_list .img img {height:100%;} */
+    /* .header .util {float:right;padding-right:290px;}
+    .header .util .search {position:absolute;top:0;right:0;width:270px;height:60px;background:#000;}
+    .header .util .search .btn_open {position:relative;width:100%;height:100%;background:#000;}
+    .header .util .search .btn_open:after {content:'';position:absolute;top:50%;right:21px;width:26px;height:26px;background:url(../images/common/top_search_wh.png) no-repeat 0 0 / 100%;transform:translateY(-50%);}
+    .header .util_list {margin-top:17px;font-size: 0;}
+    .header .util_list .item {display:inline-block;width:26px;height:26px;margin-left:20px;background:no-repeat center / auto 100%;}
+    .header .util_list .item:first-of-type {margin-left:0;}
+    .header .util_list .item > a {display:block;height:100%;}
+    .header .util_list .item_like {background-image:url(../images/common/top_wish.png);background-size: 100% auto;background-position: center bottom;}
+    .header .util_list .item_cart {background-image:url(../images/common/top_cart_pc.png);}
+    .header .util_list .item_my {background-image:url(../images/common/top_mypage.png);}
+    .header .util_list .item_cs {background-image:url(../images/common/top_search.png);} */
+    .cont_inner {position: static;}
+    .header .util {position: absolute; top: 0; right: 0; float:none;}
+    .header .util_list li:not(.item_cart) {display: none;}
+    
+    .header .btn_allmenu  {position: absolute; display:block; margin-top: 70px; top: 0; left: 0; font-size: 30px; width: 60px; height: 60px; line-height: 60px; text-align: center;}
+    .swiper-button-prev {display: none;}
+    .swiper-button-next {display: none;}
+    .header .search_wrap {display:none;}
+    .header .search_wrap .btm {display:none;}
+    .header .search_wrap .btn_close {display:none;}
 
-    .dashboard {display: flex; width: 100%; justify-content: center; }
-    .goods_list {display: flex; width: 100%; justify-content: center;}
-    .header .btn_allmenu {position: absolute;}
-    .second_goods_visual img {width: 100%;}
-    .sns_list {display: flex; flex-basis: 50%;}
-    #footer {display: flex; width: 100%; justify-content: center; }
+    .util {margin-top: 70px;}
+    .allmenu_wrap {position: fixed; top: 0; left: -100%; width: 100%; height: 100%; background: #fff; visibility: hidden; z-index: 9999;}
+    .allmenu_list li a {font-size: 48px; font-weight: 700;}
+    .close_btn {position: absolute; right: 20px; top: 20px; font-size: 50px;}
+
+
+   
+    #footer {display: flex; width: 100%; justify-content: center;}
+    #footer .company_inner {display: flex; flex-wrap: wrap;}
+    .company_insurance{display: none;}
 }
